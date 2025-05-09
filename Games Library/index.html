@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biblioteca de juegos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-950">
+
+  <!-- Navbar -->
+  <nav class="bg-sky-950 shadow-md relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16 items-center">
+        
+        <!-- Título -->
+        <div class="flex-shrink-0 text-lg font-bold text-gray-50">
+          Biblioteca de Juegos de Vengador
+        </div>
+
+        <!-- Secciones -->
+        <div class="hidden md:flex space-x-6 items-center relative">
+
+          <!-- Dropdown Plataforma -->
+          <div class="relative dropdown-container">
+            <button class="dropdown-toggle text-gray-300 hover:text-gray-500 focus:outline-none">
+              Plataforma ▾
+            </button>
+            <div class="dropdown-menu absolute right-0 mt-2 w-40 bg-white rounded-md shadow-lg py-2 hidden origin-top-right">
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-300 border-b border-gray-200">Steam</a>
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-300 border-b border-gray-200">Epic Store</a>
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-300 border-b border-gray-200">GOG</a>
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-300">Todos</a>
+            </div>
+          </div>
+
+          <!-- Dropdown Categorías -->
+          <div class="relative dropdown-container">
+            <button class="dropdown-toggle text-gray-300 hover:text-gray-500 focus:outline-none">
+              Categorías ▾
+            </button>
+            <div class="dropdown-menu absolute right-0 mt-2 w-40 bg-white rounded-md shadow-lg py-2 hidden origin-top-right">
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-300 border-b border-gray-200">Aventura</a>
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-300 border-b border-gray-200">Estrategia</a>
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-300 border-b border-gray-200">Acción</a>
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-300">Todas</a>
+            </div>
+          </div>
+
+          <!-- Favoritos -->
+          <a href="#" class="text-gray-300 hover:text-gray-500">Favoritos</a>
+        </div>
+
+        <!-- Buscador -->
+        <div class="flex items-center">
+          <input 
+            type="text" 
+            placeholder="Buscar juegos..." 
+            class="px-3 py-2 border rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main class="  px-10 py-5">
+    <h1 class="text-white font-bold text-xl my-5">Seccion/Categoria/Genero</h1>
+    <section id="GridGames" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-4">
+      <!-- Los juegos se cargarán aquí dinámicamente -->
+    </section>
+    
+  </main>
+
+  <!-- Script externo -->
+  <script src="./app.js"></script>
+  <script src="./game.js"></script>
+</body>
+</html>

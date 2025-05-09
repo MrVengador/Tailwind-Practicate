@@ -1,0 +1,17 @@
+[
+    {
+      "name": "The Witcher 3",
+      "description": "Un RPG épico de mundo abierto.",
+      "imageURL": "https://placehold.co/600x400?text=Witcher+3",
+      "categories": ["RPG", "Aventura", "Historia"],
+      "platforms": ["Steam", "GOG"]
+    },
+    {
+      "name": "Hades",
+      "description": "Un juego de acción rogue-like en el Inframundo.",
+      "imageURL": "https://placehold.co/600x400?text=Hades",
+      "categories": ["Acción", "Indie", "Rogue-like"],
+      "platforms": ["Steam", "Epic Store"]
+    }
+  ]
+  
